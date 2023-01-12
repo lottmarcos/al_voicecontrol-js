@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./icons/icon.png">
+    <title>Number Guesser</title>
+</head>
+<body>
+    <h1>Guess the secret number</h1>
+
+    <h3>The secret number is between <span id="lowest-value">0</span> - <span id="highest-value">100</span></h3>
+
+    <div id="chute" class="mensagem">
+        <div>You said:</div>
+        <span class="box"></span>
+        <div>The secret number is higher <i class="fa-solid fa-up-long"></i></div>
+    </div>
+    <script src="./app/raffleNumber.js"></script>
+</body>
+</html>
