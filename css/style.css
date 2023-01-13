@@ -3,6 +3,7 @@
     --font-family: 'Fira Code', monospace;
     --bg-color: radial-gradient(farthest-corner at right top,#7D8F69, #557153);
     --primary-color: #E6E5A3;
+    --secondary-color: #557153;
 }
 
 body {
@@ -23,22 +24,48 @@ h1 {
     font-size: 5em;
     margin-bottom: 30px;
 }
+h2 {
+    font-size: 3em;
+    margin-bottom: 30px;
+}
 
 h3 {
     font-size: 2em;
     margin-top: 20px;
 }
 
-.mensagem {
+.button {
+    border: 2px solid var(--primary-color);
+    font-family: var(--font-family);
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    margin: 25px;
+    transition: ease-in-out .3s;
+}
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: ease-in-out .3s;
+}
+
+.fa-microphone {
+    margin-left: 10px;
+}
+
+.message {
     font-size: 1.5em;
-    margin-top: 40px;
 }
 
 .box {
     border: 2px solid var(--primary-color);
     display: inline-block;
-    font-size: 4em;
-    padding: 15px;
+    font-size: 25px;
+    padding: 10px;
     margin: 20px;
 }
 

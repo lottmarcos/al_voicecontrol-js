@@ -8,18 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./icons/icon.png">
-    <title>Number Guesser</title>
+    <title>number guesser</title>
 </head>
 <body>
-    <h1>Guess the secret number</h1>
+    <h1>guess the secret number</h1>
 
-    <h3>The secret number is between <span id="lowest-value">0</span> - <span id="highest-value">100</span></h3>
+    <h3>the secret number is between <span id="lowest-value">0</span> - <span id="highest-value">100</span></h3>
 
-    <div id="chute" class="mensagem">
-        <div>You said:</div>
-        <span class="box"></span>
-        <div>The secret number is higher <i class="fa-solid fa-up-long"></i></div>
+    <button class="button" id="guess-button">guess the number! <i class="fa-solid fa-microphone"></i></button>
+
+    <div id="guess" class="message">
+        <div>you said:</div>
     </div>
     <script src="./app/raffleNumber.js"></script>
+    <script src="./app/speechRecognition.js"></script>
 </body>
 </html>
