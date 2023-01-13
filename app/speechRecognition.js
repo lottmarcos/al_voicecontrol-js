@@ -29,20 +29,20 @@ function checkGuess(guess) {
    const guessNumber = +guess
 
    if (Number.isNaN(guessNumber)) {
-      guessElement.innerHTML += '<div>invalid number</div>'
+      guessElement.innerHTML += '<div>Invalid number</div>'
    } else if (guessNumber > highestNumber || guessNumber < lowestNumber) {
-      guessElement.innerHTML += '<div>number is out of range</div>'
+      guessElement.innerHTML += '<div>Number is out of range</div>'
    } else if (guessNumber === secretNumber) {
       document.body.innerHTML =
       `
-      <h2>correct!</h2>
-      <h3>the secret number was ${secretNumber}</h3>
-      <button class="button" id="play-again">play again</button>
+      <h2>Correct!</h2>
+      <h3>The secret number was ${secretNumber}</h3>
+      <button class="button" id="play-again">Play again</button>
       `  
    } else if (guessNumber > secretNumber) {
-      guessElement.innerHTML += '<div>the secret number is lower <i class="fa-solid fa-down-long"></i></div>'
+      guessElement.innerHTML += '<div>The secret number is lower <i class="fa-solid fa-down-long"></i></div>'
    } else if (guessNumber < secretNumber) {
-      guessElement.innerHTML += '<div>the secret number is higher <i class="fa-solid fa-up-long"></i></div>'
+      guessElement.innerHTML += '<div>The secret number is higher <i class="fa-solid fa-up-long"></i></div>'
    }
    
 };
